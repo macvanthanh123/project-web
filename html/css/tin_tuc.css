@@ -1,0 +1,202 @@
+.logo_thong_tin {
+    width: 100%;
+}
+
+header {
+    background-color: #007cc4;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+    color: #efa300;
+}
+
+.menu {
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul.menu {
+    display: flex;
+    list-style: none;
+}
+
+ul.menu > li {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    font-size: small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.menu i {
+    padding-right: 10px;
+    margin-top: -1px;
+}
+
+.submenu {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 210px;
+    list-style: none;
+}
+
+ul.menu > li > ul.submenu > li {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: none;
+    margin-left: -40px;
+}
+
+ul.menu > li > ul.submenu > li > a {
+    color: #000;
+}
+
+ul.menu > li:hover > ul.submenu > li {
+    display: block;
+    transition: 0.5s;
+}
+
+ul.menu > li > ul.submenu > li:hover {
+    background-color: #efa300;
+}
+
+.tieude {
+    width: 100%;
+    background-color: #064b7e;
+    margin-top: -10px;
+}
+
+.chuto_tieude {
+    width: 100%;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    color: #ffffff;
+    padding: 12px;
+}
+
+.chunho_tieude {
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 12px;
+}
+
+.chunho_tieude a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-family: "Noto Sans", sans-serif;
+    margin: 10px;
+}
+
+.chunho_tieude span {
+    font-size: 12px;
+    font-family: "Noto Sans", sans-serif;
+    color: #ffffff;
+}
+
+
+
+.phan_cuoi {
+    display: flex;
+    font-family: "Noto Sans", sans-serif;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #007cc4;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+   
+}
+
+.dau_cuoi {
+    flex: 1 1 20%;
+    min-width: 200px;
+}
+
+.dau_cuoi h3 {
+    margin-top: 0;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.dau_cuoi ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dau_cuoi ul li {
+    margin-bottom: 10px;
+}
+
+.dau_cuoi a {
+    color: white;
+    text-decoration: none;
+}
+
+.dau_cuoi a:hover {
+    text-decoration: underline;
+}
+
+.dau_cuoi .map, .dau_cuoi .facebook-page .dau_cuoi{
+    width: 100%;
+}
+/* Định nghĩa animation */
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+.phone {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: shake 0.3s infinite; /* Lặp vô hạn */
+}
+.phone i{
+    color: #007cc4;
+    font-size: 24px;
+}
+
+.hotline-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.hotline-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+}
