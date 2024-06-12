@@ -1,23 +1,20 @@
 .logo_thong_tin {
   width: 100%;
 }
-
 header {
   background-color: #007cc4;
   color: white;
   display: flex;
   align-items: center;
+  margin-top: -5px;
 }
-
 li a {
   text-decoration: none;
   color: white;
 }
-
 li a:hover {
   color: #efa300;
 }
-
 .menu {
   width: 100%;
   justify-content: space-between;
@@ -25,12 +22,10 @@ li a:hover {
   margin-left: auto;
   margin-right: auto;
 }
-
 ul.menu {
   display: flex;
   list-style: none;
 }
-
 ul.menu > li {
   padding-left: 10px;
   padding-right: 10px;
@@ -41,19 +36,19 @@ ul.menu > li {
   font-weight: 600;
   color: white;
 }
-
+/* header ul.menu > li:last-child {
+    border: none;
+  } */
 .menu i {
   padding-right: 10px;
   margin-top: -1px;
 }
-
 .submenu {
   position: absolute;
   background-color: whitesmoke;
   width: 210px;
   list-style: none;
 }
-
 ul.menu > li > ul.submenu > li {
   padding-top: 10px;
   padding-left: 10px;
@@ -62,196 +57,73 @@ ul.menu > li > ul.submenu > li {
   display: none;
   margin-left: -40px;
 }
-
 ul.menu > li > ul.submenu > li > a {
   color: #000;
 }
-
 ul.menu > li:hover > ul.submenu > li {
   display: block;
-  transition: 0.5s;
 }
-
 ul.menu > li > ul.submenu > li:hover {
   background-color: #efa300;
+  transition: 0.5s;
 }
-
-.tieude {
-  width: 100%;
-  background-color: #064b7e;
-  margin-top: 0px;
-}
-
-.chuto_tieude {
-  width: 100%;
-  text-align: center;
-  font-family: "Noto Sans", sans-serif;
-  color: #ffffff;
-  padding: 12px;
-}
-
-.chunho_tieude {
-  width: 100%;
-  text-align: center;
-  margin-top: -20px;
-  padding-bottom: 12px;
-}
-
-.chunho_tieude a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 12px;
-  font-family: "Noto Sans", sans-serif;
-  margin: 10px;
-}
-
-.chunho_tieude span {
-  font-size: 12px;
-  font-family: "Noto Sans", sans-serif;
-  color: #ffffff;
-}
-
-.khoitin {
+.star_ {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px 20px;
-  box-sizing: border-box;
+  font-size: 25px;
 }
-
-.tinnho {
-  width: 32%; /* Adjusted width for three columns with space between */
-  position: relative;
-  margin-bottom: 20px;
-  overflow: hidden;
-  box-sizing: border-box;
+.star_font {
+  padding-top: 3px;
+  color: #ffa500;
 }
-
-.khoianh {
-  width: 100%;
-  padding-top: 75%;
-  position: relative;
-  overflow: hidden;
+.star_font :hover {
+  color: #ffee09;
 }
-
-.khoianh img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 1s ease;
+.star_font > i {
+  width: 26px;
+  height: 26px;
 }
-
-.khoianh.phongto img {
-  transform: scale(1.1);
+.toan_cuc_trang_wed_ {
+  max-width: 1350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
 }
-
-.khoianh img:hover,
-.xem_tour:hover ~ .khoianh img {
-  transform: scale(1.1);
+.toan_cuc_trang_wed_ h1 {
+  text-align: center;
+  color: #0467a1;
 }
-
-.logo_top,
-.logo_bottom {
-  position: absolute;
-  background: #00000080;
-  color: white;
-  padding: 5px;
-}
-
-.logo_top {
-  top: 0;
-  right: 0;
-  background-color: #ee170b;
-}
-
-.logo_top a {
-  text-decoration: none;
-  color: white;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: bold;
-}
-
-.logo_bottom {
-  bottom: 0;
-  left: 0;
-}
-
-.logo_bottom a {
-  text-decoration: none;
-  color: white;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-.chu_anh {
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-
-.chu_anh a {
-  text-decoration: none;
-  color: #040f9e;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.bang_gia {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f8f8f8;
-  padding: 10px;
-  border: 1px solid #f8f8f8;
-  border-radius: 5px;
-}
-
-.bang_gia i {
+.toan_cuc_trang_wed_ p {
   font-size: 20px;
-  margin-right: 10px;
   color: #007cc4;
 }
-
-.bang_gia p {
-  margin: 0 10px;
-  font-family: "Noto Sans", sans-serif;
-}
-
-.gia_chu {
-  font-family: "Noto Sans", sans-serif;
-}
-
-.niemyet {
-  text-decoration: line-through;
-  color: #bf1212;
-  opacity: 0.6;
-}
-
-.gia_that {
-  color: #bf1212;
-  font-weight: bold;
-}
-
-.xem_tour {
+a {
   text-decoration: none;
-  color: white;
-  background-color: #efa300;
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
-.xem_tour:hover {
-  background-color: #0693e3;
+.nhan_manh1 {
+  color: rgb(215, 51, 51);
 }
-
+.nhan_manh2 {
+  color: #0467a1;
+}
+.nhan_manh2:hover {
+  color: #000;
+}
+.toan_cuc_trang_wed_ ul {
+  font-size: 20px;
+  list-style: none;
+  color: #007cc4;
+}
+.toan_cuc_trang_wed_ li > i {
+  padding-right: 15px;
+  margin-top: 20px;
+  color: #007cc4;
+}
+.nhan_manh3 {
+  color: red;
+  background-color: #ffee09;
+}
+/*  */
 .phan_cuoi {
   display: flex;
   font-family: "Noto Sans", sans-serif;
@@ -296,7 +168,7 @@ ul.menu > li > ul.submenu > li:hover {
 .dau_cuoi .facebook-page .dau_cuoi {
   width: 100%;
 }
-/* Định nghĩa animation */
+/* phone */
 @keyframes shake {
   0% {
     transform: rotate(0deg);
