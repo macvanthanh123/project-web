@@ -109,7 +109,13 @@ ul.menu > li > ul.submenu > li:hover {
     font-family: "Noto Sans", sans-serif;
     color: #ffffff;
 }
-
+.quang_cao{
+    width: 100%;
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
 .khoitin {
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +125,7 @@ ul.menu > li > ul.submenu > li:hover {
 }
 
 .tinnho {
-    width: 32%; 
+    width: 32%; /* chia tỉ lệ 3 ảnh sẽ ở 1 dòng */
     position: relative;
     margin-bottom: 20px;
     overflow: hidden;
